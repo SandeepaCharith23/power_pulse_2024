@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "542009481437",
+    "project_id": "fluttercrudapplication-570d1",
+    "storage_bucket": "fluttercrudapplication-570d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542009481437:android:b512b27dd15479e7a8e334",
+        "android_client_info": {
+          "package_name": "com.example.crud_application2021"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "542009481437-5m6j1p210d9pfe68mrirf2l2bvi8r1m8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJy-_AJ8a4GfIccxDpDWlHNzQ2rDV_1F0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "542009481437-5m6j1p210d9pfe68mrirf2l2bvi8r1m8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542009481437:android:8ac8f2342ade8b9da8e334",
+        "android_client_info": {
+          "package_name": "com.example.power_pulse_2024"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "542009481437-5m6j1p210d9pfe68mrirf2l2bvi8r1m8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJy-_AJ8a4GfIccxDpDWlHNzQ2rDV_1F0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "542009481437-5m6j1p210d9pfe68mrirf2l2bvi8r1m8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
