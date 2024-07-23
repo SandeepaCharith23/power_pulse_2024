@@ -5,7 +5,7 @@ class Excersise {
   final String excersiseDescription;
   final double excersiseDuration;
   final double excersiseBurningCalleriesperMin;
-  final bool iscompleted;
+  bool iscompleted;
 
   Excersise({
     required this.excersiseId,

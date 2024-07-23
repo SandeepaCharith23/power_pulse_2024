@@ -37,9 +37,7 @@ class _AddExcersiseCardState extends State<AddExcersiseCard> {
       height: 200,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          border: Border.all(
-            color: const Color(0xFFE3E2E2),
-          ),
+          border: Border.all(color: const Color(0xFF797979)),
           boxShadow: const [
             BoxShadow(
               color: Color(0x1F868383),

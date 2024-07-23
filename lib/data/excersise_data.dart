@@ -19,7 +19,7 @@ class ExcersiseData {
           "assets/images/exercises/excersise_stationary_bike.png",
       excersiseDuration: 10.0,
       iscompleted: false,
-      excersiseBurningCalleriesperMin: 4.3,
+      excersiseBurningCalleriesperMin: 1.3,
       excersiseDescription:
           "Stationary biking offers an effective indoor cardio workout, improving endurance and strength with adjustable resistance.",
     ),
@@ -29,7 +29,7 @@ class ExcersiseData {
       excersiseImageUrl: "assets/images/exercises/excersise_elipter.png",
       excersiseDuration: 10.0,
       iscompleted: false,
-      excersiseBurningCalleriesperMin: 4.3,
+      excersiseBurningCalleriesperMin: 2.3,
       excersiseDescription:
           "The elliptical trainer provides a low-impact, full-body workout, combining cardio and strength training with adjustable resistance.",
     ),
@@ -39,7 +39,7 @@ class ExcersiseData {
       excersiseImageUrl: "assets/images/exercises/excersise_rowning.png",
       excersiseDuration: 10.0,
       iscompleted: false,
-      excersiseBurningCalleriesperMin: 4.3,
+      excersiseBurningCalleriesperMin: 1.3,
       excersiseDescription:
           "The rowing machine delivers a full-body workout, enhancing cardiovascular fitness and strength with adjustable resistance.",
     ),
@@ -49,7 +49,7 @@ class ExcersiseData {
       excersiseImageUrl: "assets/images/exercises/excersise_jumping_rope.png",
       excersiseDuration: 10.0,
       iscompleted: false,
-      excersiseBurningCalleriesperMin: 4.3,
+      excersiseBurningCalleriesperMin: 5.3,
       excersiseDescription:
           "Jump rope is a high-intensity cardio exercise that improves agility, coordination, and cardiovascular fitness.",
     ),

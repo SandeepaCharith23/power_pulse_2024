@@ -69,8 +69,9 @@ class _HomePageState extends State<HomePage> {
                 ),
 
                 //2.Plan Progress description Container
-                const ProgressCard(
-                  progressValueofExcersise: 0.1,
+                ProgressCard(
+                  progressValueofExcersise:
+                      currentuser.calculateTotalCalleriesBurnByExcersie(),
                   totalValueofExcersise: 10,
                 ),
 

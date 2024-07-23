@@ -5,7 +5,7 @@ class Equipement {
   final String equipementImageUrl;
   final double equipementUseMinutes;
   final double equipementBurningCalleriesperMinutes;
-  final bool ishandover;
+  bool ishandover;
 
   Equipement({
     required this.equipmentId,

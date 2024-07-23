@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:power_pulse_2024/models/equipement_model.dart';
 import 'package:power_pulse_2024/models/excersise_model.dart';
 
@@ -70,5 +71,85 @@ class User {
   //method for remove a equipement from favourite equipement
   void removeFavouriteEquipment(Equipement equipment) {
     userFavouredEquipementList.remove(equipment);
+  }
+
+  //method for calculating total minutes of excercised
+  double calculateTotalMinofExcersised() {
+    double totalMinutesSpendonExcersise = 0.0;
+    //looping through selected excersise list and get the time duration
+    for (var addedexcersise in userSelectedExcersisesList) {
+      totalMinutesSpendonExcersise += addedexcersise.excersiseDuration;
+    }
+
+    return totalMinutesSpendonExcersise;
+  }
+
+  //method for calculating total minutes of excercised
+  double calculateTotalMinofEquipements() {
+    double totalMinutesSpendonEquipements = 0.0;
+    //looping through selected excersise list and get the time duration
+    for (var addedquipement in userSelectedEquipementList) {
+      totalMinutesSpendonEquipements += addedquipement.equipementUseMinutes;
+    }
+
+    return totalMinutesSpendonEquipements;
+  }
+
+  //method for marking excersise as Completed
+  void markedasCompletedfunction(int selectedexcersiseId) {
+    final selectedExcersise = userSelectedExcersisesList.firstWhere(
+        (excercise01) => excercise01.excersiseId == selectedexcersiseId);
+
+    //change the status
+    selectedExcersise.iscompleted = true;
+
+    //remove selected excersise from userSelected List
+    removeExcersise(selectedExcersise);
+
+    //Update Completed excersise count;
+    userCompletedTotalExcersisesCount++;
+
+    if (kDebugMode) {
+      print("Inside User Model-markedasCompleted  function");
+    }
+  }
+
+  //method for handover Equipment
+  void markasHandoverEquipement(int selectedEquipementId) {
+    final selectedEquipment = userSelectedEquipementList.firstWhere(
+        (selectedEqu) => selectedEqu.equipmentId == selectedEquipementId);
+
+    selectedEquipment.ishandover == true;
+
+    //remove the euipement from userSelectedEquipementList
+    removeEquipement(selectedEquipment);
+
+    userHandOveredEquipementCount++;
+  }
+
+  //method for calculate total calaries burned by excersises
+  double calculateTotalCalleriesBurnByExcersie() {
+    double totalCalariesAmount = 0.0;
+
+    for (var selectedexcersise in userSelectedExcersisesList) {
+      double calperMin = selectedexcersise.excersiseBurningCalleriesperMin;
+      double totalMin = selectedexcersise.excersiseDuration;
+      totalCalariesAmount = calperMin * totalMin;
+    }
+
+    if (totalCalariesAmount >= 0 && totalCalariesAmount <= 10) {
+      totalCalariesAmount = totalCalariesAmount / 10;
+    }
+    if (totalCalariesAmount > 10 && totalCalariesAmount <= 100) {
+      totalCalariesAmount = totalCalariesAmount / 100;
+    }
+
+    if (totalCalariesAmount > 100 && totalCalariesAmount <= 1000) {
+      totalCalariesAmount = totalCalariesAmount / 1000;
+    }
+    if (kDebugMode) {
+      print("total calaries $totalCalariesAmount");
+    }
+    return totalCalariesAmount;
   }
 }
