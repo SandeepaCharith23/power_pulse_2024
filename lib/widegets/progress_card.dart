@@ -18,9 +18,9 @@ class ProgressCard extends StatefulWidget {
 class _ProgressCardState extends State<ProgressCard> {
   @override
   Widget build(BuildContext context) {
-    int completeValueofExcersise =
-        (widget.progressValueofExcersise * widget.totalValueofExcersise)
-            .toInt();
+    // int completeValueofExcersise =
+    //     (widget.progressValueofExcersise * widget.totalValueofExcersise)
+    //         .toInt();
     return Container(
       width: double.infinity,
       height: 150,

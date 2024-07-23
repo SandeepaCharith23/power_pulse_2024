@@ -6,9 +6,8 @@ import 'package:power_pulse_2024/constants/defaultvalues.dart';
 import 'package:power_pulse_2024/data/user_data.dart';
 import 'package:power_pulse_2024/models/equipement_model.dart';
 import 'package:power_pulse_2024/models/excersise_model.dart';
-import 'package:power_pulse_2024/models/user_model.dart';
+
 import 'package:power_pulse_2024/widegets/progress_card.dart';
-import 'package:power_pulse_2024/widegets/reusable_widgets_whole_app/completed_task_details_display_card.dart';
 
 import 'package:power_pulse_2024/widegets/reusable_widgets_whole_app/task_card.dart';
 
